@@ -84,6 +84,15 @@
         box-shadow: 0 12px 30px rgba(93, 64, 55, 0.15);
     }
     
+    /* Header Logo Link */
+    header a {
+        transition: opacity 0.3s ease;
+    }
+    
+    header a:hover {
+        opacity: 0.8;
+    }
+    
     /* Navigation */
     .navbar {
         background-color: white !important;
@@ -145,6 +154,45 @@
     .text-warning i {
         color: var(--accent-gold) !important;
     }
+    
+    /* Dropdown menu styling */
+    .dropdown-menu {
+        border: none;
+        box-shadow: 0 4px 15px rgba(93, 64, 55, 0.15);
+        border-radius: 10px;
+    }
+    
+    .dropdown-item:hover {
+        background-color: var(--light-brown);
+    }
+    
+    .dropdown-item:focus {
+        background-color: var(--light-brown);
+    }
+    
+    /* Search Results Dropdown */
+    #searchResults {
+        border: 1px solid var(--light-brown) !important;
+    }
+    
+    #searchResults .dropdown-item {
+        transition: background-color 0.2s ease;
+    }
+    
+    #searchResults .dropdown-item:hover {
+        background-color: var(--beige);
+    }
+    
+    #searchResults .dropdown-item:last-child {
+        border-bottom: none !important;
+    }
+    
+    /* Search Input */
+    #roomSearchInput:focus {
+        border-color: var(--warm-brown);
+        box-shadow: 0 0 0 0.2rem rgba(161, 136, 127, 0.25);
+    }
+    
     </style>
 </head>
 <body>

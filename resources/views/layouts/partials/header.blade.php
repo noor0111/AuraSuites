@@ -2,13 +2,13 @@
     <div class="container">
         <div class="row align-items-center">
             <div class="col-md-6">
-                <div class="d-flex align-items-center">
+                <a href="/" class="text-decoration-none d-flex align-items-center" style="color: inherit;">
                     <i class="fas fa-hotel fa-2x text-white me-3"></i>
                     <div>
                         <h1 class="h4 mb-0 text-white">AURA SUITES</h1>
                         <small class="text-white">Luxury Hotel Karachi</small>
                     </div>
-                </div>
+                </a>
             </div>
             <div class="col-md-6 text-end">
                 <div class="d-flex justify-content-end align-items-center">

@@ -14,12 +14,27 @@
                 <span class="badge bg-light text-dark me-1 mb-1">{{ $amenity }}</span>
                 @endforeach
             </div>
+            
+            <!-- Quantity/Nights Selection - FIXED -->
+            <div class="nights-selection mb-3" data-price="{{ $price }}">
+                <label class="form-label small">Number of Nights:</label>
+                <div class="input-group input-group-sm">
+                    <button class="btn btn-outline-warning" type="button" onclick="decreaseNights(this)">-</button>
+                    <input type="number" class="form-control text-center" value="1" min="1" max="30" 
+                           onchange="updateTotal(this, {{ $price }})">
+                    <button class="btn btn-outline-warning" type="button" onclick="increaseNights(this)">+</button>
+                </div>
+                <div class="mt-2">
+                    <small class="text-muted">Total: <span class="fw-bold text-warning total-price">PKR {{ number_format($price) }}</span></small>
+                </div>
+            </div>
+            
             <div class="d-flex justify-content-between align-items-center">
                 <div>
                     <span class="h5 text-warning">PKR {{ number_format($price) }}</span>
                     <span class="text-muted">/night</span>
                 </div>
-                <button class="btn btn-warning" onclick="bookRoom('{{ $title }}', {{ $price }})">
+                <button class="btn btn-warning" onclick="bookRoomWithNights('{{ $title }}', {{ $price }}, this)">
                     <i class="fas fa-calendar-check me-1"></i> Book Now
                 </button>
             </div>

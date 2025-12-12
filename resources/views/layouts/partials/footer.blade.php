@@ -27,7 +27,7 @@
         </div>
         <hr class="my-4">
         <div class="text-center">
-            <p>&copy; 2024 Aura Suites. All rights reserved.</p>
+            <p>&copy; 2025 Aura Suites. All rights reserved.</p>
         </div>
     </div>
 </footer>
